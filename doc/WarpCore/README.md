@@ -1,4 +1,4 @@
-# Warp Core
+# Warp Core User Manual
 
 <p align="center">
 <img src="res/warp-core.png" width="240">
