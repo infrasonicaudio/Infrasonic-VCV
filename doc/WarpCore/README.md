@@ -87,6 +87,8 @@ Applies a "tension" style curve to the phasor. Amount controls the level of tens
 This generally results in a narrowing of the waveform to one side, which  turns a sine 
 wave to something a little closer to a narrow pulse wave.
 
+<img src="res/bend-scope.gif">
+
 <div>
 <img src="res/sync.svg" width="28" align="left"><h3>Sync</h3>
 </div>
@@ -95,6 +97,8 @@ Emulation of oscillator hard-sync by wrapping the phasor back to zero at a frequ
 greater than the fundamental. Try this by itself with sawtooth windowing for a sound
 resembling a sweeping resonant filter.
 
+<img src="res/sync-scope.gif">
+
 <div>
 <img src="res/pinch.svg" width="28" align="left"><h3>Pinch</h3>
 </div>
@@ -102,12 +106,16 @@ resembling a sweeping resonant filter.
 "Pinches" the phasor toward the center of its period, leaving the beginning and end at the
 minimum and maximum point. This has sort of a formant-shifting effect on the sound.
 
+<img src="res/pinch-scope.gif">
+
 <div>
 <img src="res/fold.svg" width="28" align="left"><h3>Fold</h3>
 </div>
 
 Wavefolds the phasor by progressively mirroring it when it reaches the max/min level. This
 is similar to sync but with a wholly different sonic character.
+
+<img src="res/fold-scope.gif">
 
 ## Context Menu
 
