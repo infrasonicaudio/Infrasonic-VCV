@@ -5,7 +5,7 @@ Binary releases will be available here with release notes as well as in the offi
 
 ## Warp Core
 
-Warp core is dual-algorithm phase distortion oscillator. Supports polyphony.
+Dual-algorithm phase distortion oscillator with internal and external phase modulation. Supports polyphony.
 
 <img src="doc/WarpCore/res/warp-core.png" width="180">
 
