@@ -68,7 +68,7 @@ octave below the carrier, or to direclty output the distorted and modulated phas
 
 _<sup>*</sup> For purposes of SIMD performance optimization, Warp Core processes its DSP in blocks
 of samples rather than one at a time. The External PM input is internally buffered to maintain 
-true audio rate processing, however as a result of the buffering, there is slight latency on the output. Therefore PM feedback patches will not necessarily sound great. A low-latency mode may be added in a future update to enble improved feedback patching._
+true audio rate processing, however as a result of the buffering, there is slight latency on the output. Therefore PM feedback patches will not necessarily sound great. A low-latency mode may be added in a future update to enable improved feedback patching._
 
 ## Phase Distortion Algorithms
 
