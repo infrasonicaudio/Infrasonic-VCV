@@ -9,7 +9,7 @@ Warp core is dual-algorithm phase distortion oscillator. Supports polyphony.
 
 <img src="doc/WarpCore/res/warp-core.png" width="180">
 
-### [Manual](doc/WarpCore/manual.md)
+### [Manual](doc/WarpCore/README.md)
 
 ## Contributing
 
