@@ -1,11 +1,13 @@
 # Warp Core
 
+<p align="center">
+<img src="res/warp-core.png" width="240">
+</p>
+
 Warp Core is a dual-algorithm phase distortion oscillator with internal and external phase 
 modulation with support for polyphony. This module started as a firmware prototype for a
 Eurorack DSP platform and is being released as a free VCV Rack module to test the idea and 
 controls, while a hardware version is tentatively in development for a future release.
-
-<img src="res/warp-core.png" width="180">
 
 ## Philosophy
 
