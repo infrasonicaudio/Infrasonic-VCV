@@ -8,10 +8,10 @@
   "authorEmail": "nick@infrasonicaudio.com",
   "authorUrl": "https://www.infrasonicaudio.com",
   "pluginUrl": "https://github.com/infrasonicaudio/Infrasonic-VCV",
-  "manualUrl": "",
-  "sourceUrl": "",
+  "manualUrl": "https://github.com/infrasonicaudio/Infrasonic-VCV/blob/main/doc/README.md",
+  "sourceUrl": "https://github.com/infrasonicaudio/Infrasonic-VCV",
   "donateUrl": "",
-  "changelogUrl": "",
+  "changelogUrl": "https://github.com/infrasonicaudio/Infrasonic-VCV/releases",
   "modules": [
     {
       "slug": "InfrasonicAudio-WarpCore",
