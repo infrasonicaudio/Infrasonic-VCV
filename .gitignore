@@ -1,0 +1,8 @@
+/build
+/dep
+/dist
+/plugin.so
+/plugin.dylib
+/plugin.dll
+.DS_Store
+.vscode/settings.json

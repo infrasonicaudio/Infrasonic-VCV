@@ -1,0 +1,26 @@
+{
+  "slug": "InfrasonicAudio",
+  "name": "Infrasonic Audio",
+  "version": "2.0.0-beta-5",
+  "license": "proprietary",
+  "brand": "Infrasonic Audio",
+  "author": "Nick Donaldson",
+  "authorEmail": "nick@infrasonicaudio.com",
+  "authorUrl": "https://www.infrasonicaudio.com",
+  "pluginUrl": "",
+  "manualUrl": "",
+  "sourceUrl": "",
+  "donateUrl": "",
+  "changelogUrl": "",
+  "modules": [
+    {
+      "slug": "InfrasonicAudio-WarpCore",
+      "name": "Warp Core",
+      "description": "Dual-algorithm phase distortion and phase modulation oscillator",
+      "tags": [
+        "Oscillator",
+        "Polyphonic"
+      ]
+    }
+  ]
+}

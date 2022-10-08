@@ -1,0 +1,33 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Build",
+            "command": "gmake -j8 all",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "detail": "Makefile: make all"
+        },
+        {
+            "type": "shell",
+            "label": "Install",
+            "command": "gmake -j8 install",
+            "problemMatcher": [],
+            "detail": "Makefile: make install"
+        },
+        {
+            "type": "shell",
+            "label": "Package",
+            "detail": "Build and Package plugin (cross-platorm)",
+            "command": "gmake -j8 docker-plugin-build MAKE=/bin/make PLUGIN_DIR=${workspaceFolder} && open ../rack-plugin-toolchain/plugin-build",
+            "problemMatcher": [],
+            "options": {
+                "cwd": "../rack-plugin-toolchain"
+            }
+        }
+    ]
+}
