@@ -129,9 +129,11 @@ _Example:_
 * Red LED 1 – `Denominator = 1`
 * Ratio = `3:1` (third harmonic)
 
-As this module is intended to be a prototype for a future hardware module, the UI for this
+<img src="res/pm-ratio-ex.png">
+
+_As this module is intended to be a prototype for a future hardware module, the UI for this
 setting is meant to be something feasible to implement in hardware , e.g. by holding one 
-of the buttons and turning the **INT PM** knob.
+of the buttons and turning the **INT PM** knob._
 
 ### Phase Distortion Algorithm Selection
 
