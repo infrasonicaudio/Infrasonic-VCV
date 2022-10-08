@@ -80,7 +80,7 @@ of the algorithms.
 _More algorithms may be added in future updates!_
 
 <div>
-<img src="res/bend.svg" width="20"><h3 style="display:inline;margin-left:8px;">Bend</h3>
+<img src="res/bend.svg" width="28" align="left"><h3>Bend</h3>
 </div>
 
 Applies a "tension" style curve to the phasor. Amount controls the level of tension.
@@ -88,7 +88,7 @@ This generally results in a narrowing of the waveform to one side, which  turns 
 wave to something a little closer to a narrow pulse wave.
 
 <div>
-<img src="res/sync.svg" width="20"><h3 style="display:inline;margin-left:8px;">Sync</h3>
+<img src="res/sync.svg" width="28" align="left"><h3>Sync</h3>
 </div>
 
 Emulation of oscillator hard-sync by wrapping the phasor back to zero at a frequency
@@ -96,14 +96,14 @@ greater than the fundamental. Try this by itself with sawtooth windowing for a s
 resembling a sweeping resonant filter.
 
 <div>
-<img src="res/pinch.svg" width="20"><h3 style="display:inline;margin-left:8px;">Pinch</h3>
+<img src="res/pinch.svg" width="28" align="left"><h3>Pinch</h3>
 </div>
 
 "Pinches" the phasor toward the center of its period, leaving the beginning and end at the
 minimum and maximum point. This has sort of a formant-shifting effect on the sound.
 
 <div>
-<img src="res/fold.svg" width="20"><h3 style="display:inline;margin-left:8px;">Fold</h3>
+<img src="res/fold.svg" width="28" align="left"><h3>Fold</h3>
 </div>
 
 Wavefolds the phasor by progressively mirroring it when it reaches the max/min level. This
