@@ -463,4 +463,4 @@ struct WarpCoreWidget : ModuleWidget {
 };
 
 
-Model* modelWarpCore = createModel<WarpCore, WarpCoreWidget>("InfrasonicAudio-WarpCore");
+Model* modelWarpCore = createModel<WarpCore, WarpCoreWidget>("WarpCore");
