@@ -38,7 +38,7 @@ phasor and applying the same windowing. This does *not* produce a 90-degree shif
 first output, but rather a similar-but-different complex output waveform, since the phasor wrapping 
 applies differently to the cosine than it does to the sine. (Hint: this sounds pretty cool when 
 used as a "right" output for stereo processing). The second output may also be optionally configured
-to produce a pure wave at the same fundamental frequency as the carrier, a sine sub-oscillator one 
+to produce a pure sine wave at the same fundamental frequency as the carrier, a sine sub-oscillator one 
 octave below the carrier, or to direclty output the distorted and modulated phasor.
 
 ## Controls
