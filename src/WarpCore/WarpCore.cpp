@@ -91,8 +91,10 @@ struct WarpCore : Module {
 
 	void onReset(const ResetEvent& e) override {
 		Module::onReset(e);
-		for (int c = 0; c < kMaxChannels; c++)
+		for (int c = 0; c < kMaxChannels; c++) {
 			osc[c].Reset();
+			patch = infrasonic::PhaseDistortionOscillator::Patch();
+		}
 	}
 
 	void onRandomize(const RandomizeEvent& e) override {
