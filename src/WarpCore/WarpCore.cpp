@@ -59,7 +59,7 @@ struct WarpCore : Module {
 
 	WarpCore() {
 		config(PARAMS_LEN, INPUTS_LEN, OUTPUTS_LEN, LIGHTS_LEN);
-		configParam(TUNE_COARSE_PARAM, 0.0f, kTuneNumOctaves, 1.0f, "Frequency", " (Hz)", 2.0f, kTuneMinFreq, 0.0f);
+		configParam(TUNE_COARSE_PARAM, 0.0f, kTuneNumOctaves, 3.0f, "Frequency", " (Hz)", 2.0f, kTuneMinFreq, 0.0f);
 		configParam(INT_PM_PARAM, 0.f, 1.f, 0.f, "Internal PM Level");
 		configParam(PM_RATIO_PARAM, 0, NUM_PM_RATIOS - 1, 3, "PM Ratio");
 		configButton(ALG1_PARAM, "Warp Algorithm A Toggle");
