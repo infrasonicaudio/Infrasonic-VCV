@@ -158,7 +158,7 @@ struct WarpCore : Module {
 
 		// Process kBlockSize * oversampling samples through the engine.
 		// This decimates the sample rate of inputs by kBlockSize.
-		if (outputBuffer.empty()) {
+		if (extPMBuffers[0].size() == static_cast<size_t>(ovsBlockSize)) {
 
 			// -- PM Ratio --
 			setRatioIndex(fmin(roundf(params[PM_RATIO_PARAM].getValue()), NUM_PM_RATIOS - 1));
