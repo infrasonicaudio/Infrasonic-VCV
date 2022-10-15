@@ -150,7 +150,7 @@ struct WarpCore : Module {
 
 		// Accumulate ext PM input (needs to be processed at audio rate despite buffering)
 		for (int c = 0; c < numChannels; c++) {
-			float extpm = inputs[EXT_PM_INPUT].getPolyVoltage(c) / 10.0f;
+			float extpm = inputs[EXT_PM_INPUT].getPolyVoltage(c);
 			for (int i = 0; i < oversampling; i++) {
 				extPMBuffers[c].push(extpm);
 			}
