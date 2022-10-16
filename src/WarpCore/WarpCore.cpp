@@ -134,13 +134,15 @@ struct WarpCore : Module {
 	void process(const ProcessArgs& args) override {
 
 		const int numChannels = std::max(inputs[PITCH_CV_INPUT].getChannels(), 1);
+		const int numExtInChannels = std::max(inputs[EXT_PM_INPUT].getChannels(), 1);
 
-		if (needsSampleRateUpdate) {
+		if (needsSampleRateUpdate || (numChannels != numOutputChannels)) {
 			for (int c = 0; c < kMaxChannels; c++) {
 				osc[c].SetSampleRate(srConfig.sampleRate * srConfig.oversampling);
 				extPMBuffers[c].clear();
 			}
 			outputBuffer.clear();
+			numOutputChannels = numChannels;
 			needsSampleRateUpdate = false;
 		}
 
@@ -149,10 +151,14 @@ struct WarpCore : Module {
 		const int ovsBlockSize = kBlockSize * oversampling;
 
 		// Accumulate ext PM input (needs to be processed at audio rate despite buffering)
-		for (int c = 0; c < numChannels; c++) {
-			float extpm = inputs[EXT_PM_INPUT].getPolyVoltage(c);
-			for (int i = 0; i < oversampling; i++) {
-				extPMBuffers[c].push(extpm);
+		for (int c = 0; c < kMaxChannels; c++) {
+			if (c < numChannels) {
+				// EXT PM may not have the same channel count as the input, in which case
+				// the fallback is to round-robin assign EXT PM channels to voices
+				float extpm = inputs[EXT_PM_INPUT].getPolyVoltage(c % numExtInChannels);
+				for (int i = 0; i < oversampling; i++) {
+					extPMBuffers[c].push(extpm);
+				}
 			}
 		}
 
@@ -322,6 +328,7 @@ struct WarpCore : Module {
 
 		infrasonic::PhaseDistortionOscillator::Patch patch;
 		infrasonic::PhaseDistortionOscillator osc[kMaxChannels];
+		int numOutputChannels = 1;
 
 		dsp::BooleanTrigger algo1Trigger, algo2Trigger;
 		dsp::SampleRateConverter<kMaxChannels * 2> outputSrc;
